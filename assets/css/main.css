@@ -3921,6 +3921,22 @@ input, select, textarea {
 	background-size: 100% 100%;
 }
 
+#SocialMedia{
+	background-attachment: fixed;
+	background-image: url("images/intro.svg");
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#footer{
+	background-attachment: fixed;
+	background-image: url("images/intro.svg");
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
 	#intro {
 		background-attachment: fixed;
 		background-image: url("images/intro.svg");
