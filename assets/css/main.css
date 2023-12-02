@@ -2603,6 +2603,18 @@ input, select, textarea {
 	width: 15%;
 }
 
+.centerPortfolioImage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 50%;
+	height: 50%;
+	padding-left: 3em;
+}
+
+
 	.image {
 		border-radius: 0.25em;
 		border: 0;
@@ -3046,29 +3058,31 @@ input, select, textarea {
 			min-height: 0;
 		}
 
-		.spotlights > section > .image {
+		.spotlights > section > .centerPortfolioImage {
 			background-position: center center;
 			background-size: cover;
-			border-radius: 0;
+			border-radius: 2cm;
 			display: block;
 			position: relative;
-			width: 25em;
+			width: auto;
+			height: auto;
 		}
 
-			.spotlights > section > .image img {
+			.spotlights > section > .centerPortfolioImage img {
 				border-radius: 0;
 				display: block;
 			}
 
-			.spotlights > section > .image:before {
+			.spotlights > section > .centerPortfolioImage:before {
 				-moz-transition: opacity 1s ease;
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(154, 30, 31, 0.5);
 				content: '';
 				display: block;
 				height: 100%;
+				border-radius: 0;
 				left: 0;
 				opacity: 0;
 				position: absolute;
@@ -3114,8 +3128,8 @@ input, select, textarea {
 			background-color: rgba(0, 0, 0, 0.1);
 		}
 
-		.spotlights > section.inactive > .image:before,
-		body.is-preload .spotlights > section > .image:before {
+		.spotlights > section.inactive > .centerPortfolioImage:before,
+		body.is-preload .spotlights > section > .centerPortfolioImage:before {
 			opacity: 1;
 		}
 
@@ -3133,7 +3147,6 @@ input, select, textarea {
 			.spotlights > section > .content {
 				padding: 4em 4em 2em 4em ;
 			}
-
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3142,9 +3155,11 @@ input, select, textarea {
 				display: block;
 			}
 
-				.spotlights > section > .image {
-					width: 100%;
-					height: 50vh;
+				.spotlights > section > .centerPortfolioImage {
+					align-content: center;
+					min-width: 17em;
+					min-height: 15em;
+					padding-left: 4em;
 				}
 
 				.spotlights > section > .content {
@@ -3163,9 +3178,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.spotlights > section > .image {
-				height: 50vh;
+			.spotlights > section > .centerPortfolioImage {
+				min-width: 17em;
 				min-height: 15em;
+				padding-left: 2em;
 			}
 
 			.spotlights > section > .content {
