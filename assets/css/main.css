@@ -151,7 +151,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.90);
-		font-family:Poppins,Sylfaen, Helvetica, sans-serif, Berlin Sans FB Demi ;
+		font-family: 'Poppins',Sylfaen, sans-serif, Berlin Sans FB Demi ;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -168,7 +168,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -264,7 +264,7 @@ input, select, textarea {
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 1.20em;
 	}
 
 	h5 {
@@ -290,7 +290,7 @@ input, select, textarea {
 		}
 
 		h4 {
-			font-size: 0.8em;
+			font-size: 1em;
 		}
 
 		h5 {
@@ -2602,6 +2602,7 @@ input, select, textarea {
 
 /* Image */
 
+/* center image alignment*/
 .centerImage{
 	display: block;
 	margin-left: auto;
@@ -2609,6 +2610,39 @@ input, select, textarea {
 	width: 15%;
 }
 
+@media screen and (max-width: 1680px) {
+
+	.centerImage {
+		padding: 4em 4em 2em 4em ;
+	}
+}
+
+@media screen and (max-width: 980px) {
+
+	.centerImage{
+		display: block;
+	}
+
+		.centerImage {
+			align-content: center;
+			min-width: 17em;
+			min-height: 15em;
+		}
+
+		.centerImage {
+			width: 50%;
+		}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	.centerImage{
+		padding: 3em 2em 1em 2em ;
+	}
+
+}
+/* center image alignment*/
 .centerPortfolioImage{
 	display: block;
 	margin-left: auto;
@@ -3974,8 +4008,10 @@ input, select, textarea {
 		background-size: 100% 100%;
 	}
 
+	/* CODE ABOUT INTRO TEXT NOT SURE WHY IT IS HERE LIKE THIS */
+/*
 		#intro p {
-			font-size: 1.25em;
+			font-size: 1em;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -4001,3 +4037,4 @@ input, select, textarea {
 			}
 
 		}
+*/
