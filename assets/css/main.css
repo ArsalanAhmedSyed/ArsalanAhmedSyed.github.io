@@ -71,6 +71,14 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* MY SHIT HERE */
+.project-info h4,
+.project-info p {
+  display: inline;
+  font-family: Poppins;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
