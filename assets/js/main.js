@@ -147,7 +147,6 @@
 
 					// Activate section.
 						$(this).removeClass('inactive');
-
 				}
 			})
 			.each(function() {
@@ -185,9 +184,18 @@
 
 					// Activate section.
 						$(this).removeClass('inactive');
-
 				}
 			});
+
+			$(document).ready(function() {
+		  $('.btn').click(function() {
+		    // Remove active class from all buttons
+		    $('.btn').removeClass('active');
+
+		    // Add active class to the clicked button
+		    $(this).addClass('active');
+		  });
+		});
 
 })(jQuery);
 
@@ -241,50 +249,46 @@ for (var i = 0; i < btns.length; i++) {
 
 //POP UP //
 //////////////////////////////////////////
-// Project Eve
-var modal = document.getElementById("ProjectEveModal");
-// Get the button that opens the modal
-var btn = document.getElementById("ProjectEveBtn");
+function togglePopup(modalId, btnId, closeId){
+	var modal = document.getElementById(modalId);
+	// Get the button that opens the modal
+	var btn = document.getElementById(btnId);
+	// Get the <span> element that closes the modal
+	var span = document.getElementById(closeId);
 
-// Get the <span> element that closes the modal
-var span = document.getElementById("ProjectEveClose");
+	// When the user clicks on the button, open the modal
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// Store all modal IDs in an array
+var modalIds = ["ProjectEve", "Mario", "TwoSouls", "SuperFox", "LightsAndShadows"];
 
+// Call the function for each modal
+modalIds.forEach(function(modalId) {
+  togglePopup(modalId + "Modal", modalId + "Btn", modalId + "Close");
+});
 
-
-//Two_Souls
-var TwoSoulsModal = document.getElementById("TwoSoulsModal");
-// Get the button that opens the modal
-var TwoSoulsBtn = document.getElementById("TwoSoulsBtn");
-
-// Get the <span> element that closes the modal
-var TwoSoulsClose = document.getElementById("TwoSoulsClose");
-
-// When the user clicks on the button, open the modal
-TwoSoulsBtn.onclick = function() {
-  TwoSoulsModal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-TwoSoulsClose.onclick = function() {
-  TwoSoulsModal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
+// Event delegation to handle modal closing
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-  else if(event.target == TwoSoulsModal) {
-    TwoSoulsModal.style.display = "none";
-  }
+  modalIds.forEach(function(modalId) {
+    var modal = document.getElementById(modalId + "Modal");
+    var btn = document.getElementById(modalId + "Btn");
+    var close = document.getElementById(modalId + "Close");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+    if (event.target === btn) {
+      modal.style.display = "block";
+    }
+    if (event.target === close) {
+      modal.style.display = "none";
+    }
+  });
 }

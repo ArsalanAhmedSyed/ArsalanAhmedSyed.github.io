@@ -89,8 +89,8 @@ input, select, textarea {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #000000;
-  margin: 25% auto; /* 15% from the top and centered */
+  background-color: #cf3939;
+  margin: 5% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
@@ -106,7 +106,7 @@ input, select, textarea {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #ffe7e7;
   text-decoration: none;
   cursor: pointer;
 }
@@ -118,7 +118,15 @@ input, select, textarea {
 }
 
 .container {
-  overflow: hidden;
+  /*overflow: hidden;*/
+	display: flex;
+  justify-content: center; /* Align buttons horizontally at the center */
+  flex-wrap: wrap; /* Allow buttons to wrap if the container is smaller */
+}
+.ListContainer{
+	display: flex;
+  justify-content: center; /* Align buttons horizontally at the center */
+  flex-wrap: wrap; /* Allow buttons to wrap if the container is smaller */
 }
 
 .filterDiv {
@@ -139,21 +147,19 @@ input, select, textarea {
 
 /* Style the buttons */
 .btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
   cursor: pointer;
+	font-size: 0.8em;
+	margin-bottom: 2%;
 }
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+  background-color: #c33a3a;
 }
 
 /* Add a dark background to the active button */
 .btn.active {
-  background-color: #666;
+  background-color: #5eb45a;
   color: white;
 }
 

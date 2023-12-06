@@ -36,6 +36,10 @@
 				</div>
 			</section>
 
+			<!---------------------------------------------------------------------------------------------------->
+			<!---------------------------------------------------------------------------------------------------->
+			<!---------------------------------------------------------------------------------------------------->
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Welcome -->
@@ -58,6 +62,10 @@
 					</div>
 				</section>
 
+				<!---------------------------------------------------------------------------------------------------->
+				<!---------------------------------------------------------------------------------------------------->
+				<!---------------------------------------------------------------------------------------------------->
+
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
@@ -73,36 +81,52 @@
 									<li><a href="#Portfolio" class="button scrolly"> ▼ Checkout Portfolio ▼</a></li>
 								</ul>
 						</div>
-						<section>
-							<!-- Control buttons -->
-							<div id="myBtnContainer">
-							  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-							  <button class="btn" onclick="filterSelection('cunity')"> C#/Unity</button>
-							  <button class="btn" onclick="filterSelection('c++')"> C++</button>
-							  <button class="btn" onclick="filterSelection('un5')"> Unreal Engine</button>
-							  <button class="btn" onclick="filterSelection('other')"> Other</button>
-							</div>
-
-							<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-							<div class="container">
-									<!-- TwoSouls -->
-								<div class="filterDiv cunity"> <a class="image"><class="button" id="TwoSoulsBtn"><img src="images/Two_Soul_ImgS.jpg" alt="" data-position="center center" /></class></a></div>
-								<!-- SuperFox -->
-								<div class="filterDiv cunity">SuperFox</div>
-								<!-- Project Eve -->
-							  <div class="filterDiv c++"> <a class="image"><class="button" id="ProjectEveBtn"><img src="images/ProjectEve_img.jpg" alt="" data-position="center center" /></class></a></div>
-							  <div class="filterDiv un5">LightsAndShadow</div>
-								<div class="filterDiv other">MultiplayerLevelDesign</div>
-							</div>
-						</section>
 					</section>
 
+					<!---------------------------------------------------------------------------------------------------->
+					<!---------------------------------------------------------------------------------------------------->
+					<!---------------------------------------------------------------------------------------------------->
+
 				<!-- Portfolio -->
-					<section id="Portfolio" class="wrapper style2 spotlights" >
+					<section id="Portfolio" class="wrapper style1  fade-up" >
 						<h1 style= "font-family:Berlin Sans FB Demi; text-align:center"> Portfolio Categories</h1>
+						<!-- <section>
+							<div class="inner">
+								<a href="C++.html"  class="CategoriesImage" ><img src="images/All_img.png" alt="" data-position="center center"></a>
+							</div>
+						</section> -->
+
+
+					<section>
+						<!-- Control buttons -->
+						<div id="myBtnContainer">
+							<div class ="ListContainer">
+							<button class="btn" onclick="filterSelection('all')"> Show all</button>
+							<button class="btn" onclick="filterSelection('cunity')"> C#/Unity</button>
+							<button class="btn" onclick="filterSelection('c++')"> C++</button>
+							<button class="btn" onclick="filterSelection('un5')"> Unreal Engine</button>
+
+							<!--button class="btn" onclick="filterSelection('other')"> Other</button-->
+							<div class ="ListContainer">
+
+						</div>
+
+						<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+						<div class="container">
+								<!-- TwoSouls -->
+							<div class="filterDiv cunity"> <a class="image"><class="button" id="TwoSoulsBtn"><img src="images/Two_Soul_ImgS.jpg" alt="" data-position="center center" /></class></a></div>
+							<!-- SuperFox -->
+							<div class="filterDiv cunity"> <a class="image"><class="button" id="SuperFoxBtn"><img src="images/SuperFox_img.png" alt="" data-position="center center" /></class></a></div>
+							<!-- Project Eve -->
+							<div class="filterDiv c++; filterDiv un5"> <a class="image"><class="button" id="ProjectEveBtn"><img src="images/ProjectEve_img.jpg" alt="" data-position="center center" /></class></a></div>
+							<!-- Mario -->
+							<div class="filterDiv c++"> <a class="image"><class="button" id="MarioBtn"><img src="images/Mario_Img.jpg" alt="" data-position="center center" /></class></a></div>
+							<!-- Lights And Shadow -->
+							<div class="filterDiv un5"> <a class="image"><class="button" id="LightsAndShadowsBtn"><img src="images/LightAndShadow_Img.jpg" alt="" data-position="center center" /></class></a></div>
+						</div>
+					</section>
 
 						<!-- PROJECT EVE-->
-						<section>
 							<div id="ProjectEveModal" class="modal">
 							<!-- Modal content -->
 							<div class="modal-content">
@@ -130,10 +154,9 @@
 									</div>
 								</div>
 							</div>
-						</section>
+						</div>
 
 						<!-- TWO SOULS -->
-						<section>
 							<div id="TwoSoulsModal" class="modal">
 							<!-- Modal content -->
 							<div class="modal-content">
@@ -159,13 +182,86 @@
 									</div>
 								</div>
 							</div>
-						</section>
+						</div>
 
-						<section>
-							<div class="inner">
-								<a href="C++.html"  class="CategoriesImage" ><img src="images/All_img.png" alt="" data-position="center center"></a>
+						<!-- SUPER FOX -->
+							<div id="MarioModal" class="modal">
+							<!-- Modal content -->
+							<div class="modal-content">
+								<span class="close" class="button" id="MarioClose">&times;</span>
+								<div class="content">
+									<div class="inner">
+										<h1 style ="font-family:Berlin Sans FB Demi">Mario Game</h1>
+										<div class="project-info">
+											<h4 style ="font-family:Poppins"> Project: </h4>
+											<p>SDL, C++, Uni 1st year, Independent</p>
+										</div>
+											<div class="project-info">
+												<h4 style ="font-family:Poppins"> Features: </h4>
+												<p> Sprite Animation, AI, Collision<p>
+										</div>
+									</br>
+										<p>I redesign the original Mario game using Simple Direct Media Layer (SDL), created in my first year of university; I used C/C++ to create the game.</p>
+										<ul class="actions">
+											<li><a href="https://youtu.be/QJWQcQv0O8k" target="_blank" class="button">Watch Gameplay</a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
-						</section>
+						</div>
+
+						<!-- MARIO -->
+							<div id="SuperFoxModal" class="modal">
+							<!-- Modal content -->
+							<div class="modal-content">
+								<span class="close" class="button" id="SuperFoxClose">&times;</span>
+								<div class="content">
+									<div class="inner">
+										<h1 style ="font-family:Berlin Sans FB Demi">Super Fox</h1>
+										<div class="project-info">
+											<h4 style ="font-family:Poppins">Project:</h4>
+											<p> Unity, 2020, Independent</p>
+											</br>
+											<h4 style ="font-family:Poppins">Features:</h4>
+											<p> Sprite Animation, Level Design, C# Gameplay Features<p>
+										</div>
+									</br>
+										<p> (NEED TO RE-WRITE THIS CRAP)Mini project that I worked on to start my journey as a game developer. The game was inspired by classic Mario games and includes
+											side quests such as collecting specific amounts of cherries, killing monsters, and finding hidden gem.</p>
+										<ul class="actions">
+											<!--li style ="font-family:Berlin Sans FB Demi"><a href="https://youtu.be/qMyb2hdprYs" target="_blank" class="button">Watch Gameplay</a></li-->
+											<li style ="font-family:Berlin Sans FB Demi"><a href="https://arsalan-syed.itch.io/gamu" target="_blank" class="button">Download Game</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					<!-- LIGHT AND SHADOW -->
+						<div id="LightsAndShadowsModal" class="modal">
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close" class="button" id="LightsAndShadowsClose">&times;</span>
+							<div class="content">
+								<div class="inner">
+									<h1 style="font-family:Berlin Sans FB Demi">Light And shadow</h1>
+									<h4 style="font-family:Poppins"> [CGD'23] UE5 // Team Project > Role - Techincal designer</h4>
+									<p>This was 6 weeks project that took 20+ people to work together and make a game.
+										 My role as a junior technical designer was to work with the final year student seniors and other juniors to create features for the game.
+										 I worked on creating functionality for the character such as movement, the bag weight system, interaction with the artefact and performing bug fixes.</p> <br />
+									<ul class="actions">
+										<li><a href="https://www.youtube.com/watch?v=JG9gvrKbYKU&t=64s" target="_blank" class="button">Watch Gameplay</a></li>
+										<li><a href="https://psychowren.itch.io/lights-shadows" target="_blank" class="button">Download Game</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+	</section>
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
 
 				<!-- Social Media -->
 				<footer id="footer" class="wrapper style1">
