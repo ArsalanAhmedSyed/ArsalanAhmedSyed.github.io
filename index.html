@@ -100,29 +100,35 @@
 					<section>
 						<!-- Control buttons -->
 						<div id="myBtnContainer">
-							<div class ="ListContainer">
-							<button class="btn" onclick="filterSelection('all')"> Show all</button>
-							<button class="btn" onclick="filterSelection('cunity')"> C#/Unity</button>
-							<button class="btn" onclick="filterSelection('c++')"> C++</button>
-							<button class="btn" onclick="filterSelection('un5')"> Unreal Engine</button>
-
-							<!--button class="btn" onclick="filterSelection('other')"> Other</button-->
-							<div class ="ListContainer">
-
 						</div>
+							<div class ="ListContainer">
+							<button class="btn active" onclick="filterSelection('all')" style ="font-family:Poppins"> Show all</button>
+							<button class="btn" onclick="filterSelection('university')" style ="font-family:Poppins"> University</button>
+							<button class="btn" onclick="filterSelection('personal')" style ="font-family:Poppins"> Personal </button>
+							</div>
+							<div class ="ListContainer">
+							<button class="btn" onclick="filterSelection('cunity')" style ="font-family:Poppins"> C#/Unity</button>
+							<button class="btn" onclick="filterSelection('c++')" style ="font-family:Poppins"> C++</button>
+							<button class="btn" onclick="filterSelection('un5')" style ="font-family:Poppins"> Unreal Engine</button>
+							<button class="btn" onclick="filterSelection('group')" style ="font-family:Poppins"> Team Project</button>
+							<button class="btn" onclick="filterSelection('other')" style ="font-family:Poppins"> Other </button>
 
+					</div>
+					</section>
+
+					<section>
 						<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 						<div class="container">
 								<!-- TwoSouls -->
-							<div class="filterDiv cunity"> <a class="image"><class="button" id="TwoSoulsBtn"><img src="images/Two_Soul_ImgS.jpg" alt="" data-position="center center" /></class></a></div>
+							<div class="filterDiv cunity; university"> <a class="image"><class="button" id="TwoSoulsBtn"><img src="images/TwoSouls_img.png" alt="" data-position="center center" /></class></a></div>
 							<!-- SuperFox -->
-							<div class="filterDiv cunity"> <a class="image"><class="button" id="SuperFoxBtn"><img src="images/SuperFox_img.png" alt="" data-position="center center" /></class></a></div>
+							<div class="filterDiv cunity; personal"> <a class="image"><class="button" id="SuperFoxBtn"><img src="images/SuperFox_img.png" alt="" data-position="center center" /></class></a></div>
 							<!-- Project Eve -->
-							<div class="filterDiv c++; filterDiv un5"> <a class="image"><class="button" id="ProjectEveBtn"><img src="images/ProjectEve_img.jpg" alt="" data-position="center center" /></class></a></div>
+							<div class="filterDiv c++; filterDiv un5; personal"> <a class="image"><class="button" id="ProjectEveBtn"><img src="images/ProjectEve_img.png" alt="" data-position="center center" /></class></a></div>
 							<!-- Mario -->
-							<div class="filterDiv c++"> <a class="image"><class="button" id="MarioBtn"><img src="images/Mario_Img.jpg" alt="" data-position="center center" /></class></a></div>
+							<div class="filterDiv c++; other; university"> <a class="image"><class="button" id="MarioBtn"><img src="images/Mario_Img.png" alt="" data-position="center center" /></class></a></div>
 							<!-- Lights And Shadow -->
-							<div class="filterDiv un5"> <a class="image"><class="button" id="LightsAndShadowsBtn"><img src="images/LightAndShadow_Img.jpg" alt="" data-position="center center" /></class></a></div>
+							<div class="filterDiv un5; group; university"> <a class="image"><class="button" id="LightsAndShadowsBtn"><img src="images/LightAndShadow_Img.png" alt="" data-position="center center" /></class></a></div>
 						</div>
 					</section>
 
@@ -133,10 +139,10 @@
 								<span class="close" class="button" id="ProjectEveClose">&times;</span>
 								<div class="content">
 									<div class="inner">
-										<h1 style ="font-family:Berlin Sans FB Demi">Project Eve</h1>
+										<h1 style ="font-family:Berlin Sans FB Demi">PROJECT EVE</h1>
 										<div class="project-info">
 										<h4 style ="font-family:Poppins"> Project: </h4>
-										<p> C++ // Blueprint // UE5 // Independent<p>
+										<p> C++, Blueprint, UE5, Independent<p>
 										</div>
 										<h4 style ="font-family:Poppins">Features: </h4>
 										<ul>
@@ -163,15 +169,20 @@
 								<span class="close" class="button" id="TwoSoulsClose">&times;</span>
 								<div class="content">
 									<div class="inner">
-										<h1 style ="font-family:Berlin Sans FB Demi">Two_Souls</h1>
+										<h1 style ="font-family:Berlin Sans FB Demi">TWO SOULS</h1>
 										<div class="project-info">
 											<h4 style ="font-family:Poppins">Project:</h4>
 											<p>Unity, C#, Uni 2nd year, Independent </p>
-											</br>
+										</br>
 											<h4 style ="font-family:Poppins">Features:</h4>
-											<p> UI, 2D Animation, Level Design, Possession, C#<p>
+											<ul>
+												<li>UI</li>
+												<li>2D Animation</li>
+												<li>Possession</li>
+												<li>C#</li>
+											</ul>
 										</div>
-									</br>
+										<hr>
 										<p>I worked on creating proper documentation for the design of the game as well as using Industry standard
 											techniques for scheduling and creating sprints using agile methodology. The game is a single player puzzle-based game where players need to
 											make use of both characters with unique abilities to escape the lab.</p>
@@ -184,23 +195,27 @@
 							</div>
 						</div>
 
-						<!-- SUPER FOX -->
+						<!-- MARIO -->
 							<div id="MarioModal" class="modal">
 							<!-- Modal content -->
 							<div class="modal-content">
 								<span class="close" class="button" id="MarioClose">&times;</span>
 								<div class="content">
 									<div class="inner">
-										<h1 style ="font-family:Berlin Sans FB Demi">Mario Game</h1>
+										<h1 style ="font-family:Berlin Sans FB Demi">MARIO</h1>
 										<div class="project-info">
 											<h4 style ="font-family:Poppins"> Project: </h4>
 											<p>SDL, C++, Uni 1st year, Independent</p>
 										</div>
 											<div class="project-info">
 												<h4 style ="font-family:Poppins"> Features: </h4>
-												<p> Sprite Animation, AI, Collision<p>
+												<ul>
+													<li>Sprite Animation</li>
+													<li>AI</li>
+													<li>Collision</li>
+												</ul>
 										</div>
-									</br>
+									<hr>
 										<p>I redesign the original Mario game using Simple Direct Media Layer (SDL), created in my first year of university; I used C/C++ to create the game.</p>
 										<ul class="actions">
 											<li><a href="https://youtu.be/QJWQcQv0O8k" target="_blank" class="button">Watch Gameplay</a></li>
@@ -210,22 +225,26 @@
 							</div>
 						</div>
 
-						<!-- MARIO -->
+						<!-- SUPER FOX -->
 							<div id="SuperFoxModal" class="modal">
 							<!-- Modal content -->
 							<div class="modal-content">
 								<span class="close" class="button" id="SuperFoxClose">&times;</span>
 								<div class="content">
 									<div class="inner">
-										<h1 style ="font-family:Berlin Sans FB Demi">Super Fox</h1>
+										<h1 style ="font-family:Berlin Sans FB Demi">SUPER FOX</h1>
 										<div class="project-info">
 											<h4 style ="font-family:Poppins">Project:</h4>
 											<p> Unity, 2020, Independent</p>
 											</br>
 											<h4 style ="font-family:Poppins">Features:</h4>
-											<p> Sprite Animation, Level Design, C# Gameplay Features<p>
+												<ul>
+													<li>Sprite Animation</li>
+													<li>Level Design</li>
+													<li>C# Gameplay Features</li>
+												</ul>
 										</div>
-									</br>
+									<hr>
 										<p> (NEED TO RE-WRITE THIS CRAP)Mini project that I worked on to start my journey as a game developer. The game was inspired by classic Mario games and includes
 											side quests such as collecting specific amounts of cherries, killing monsters, and finding hidden gem.</p>
 										<ul class="actions">
@@ -237,7 +256,6 @@
 							</div>
 						</div>
 
-
 					<!-- LIGHT AND SHADOW -->
 						<div id="LightsAndShadowsModal" class="modal">
 						<!-- Modal content -->
@@ -245,8 +263,20 @@
 							<span class="close" class="button" id="LightsAndShadowsClose">&times;</span>
 							<div class="content">
 								<div class="inner">
-									<h1 style="font-family:Berlin Sans FB Demi">Light And shadow</h1>
-									<h4 style="font-family:Poppins"> [CGD'23] UE5 // Team Project > Role - Techincal designer</h4>
+									<h1 style="font-family:Berlin Sans FB Demi">LIGHTS AND SHADOWS</h1>
+									<div class="project-info">
+										<h4 style ="font-family:Poppins">Project:</h4>
+										<p> [CGD'23] UE5 // Team Project > Role - Techincal designer</p>
+									</br>
+										<h4 style ="font-family:Poppins">Features:</h4>
+											<ul>
+												<li>Collaburation</li>
+												<li>Bug Fixes</li>
+												<li>UI Interaction</li>
+												<li>Bag System</li>
+											</ul>
+									</div>
+									<hr>
 									<p>This was 6 weeks project that took 20+ people to work together and make a game.
 										 My role as a junior technical designer was to work with the final year student seniors and other juniors to create features for the game.
 										 I worked on creating functionality for the character such as movement, the bag weight system, interaction with the artefact and performing bug fixes.</p> <br />
