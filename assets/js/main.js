@@ -268,7 +268,7 @@ function togglePopup(modalId, btnId, closeId){
 }
 
 // Store all modal IDs in an array
-var modalIds = ["ProjectEve", "Mario", "TwoSouls", "SuperFox", "LightsAndShadows", "DirectX", "SeasonScape"];
+var modalIds = ["ProjectEve", "Mario", "TwoSouls", "SuperFox", "LightsAndShadows", "DirectX", "SeasonScape", "MLD"];
 
 // Call the function for each modal
 modalIds.forEach(function(modalId) {
