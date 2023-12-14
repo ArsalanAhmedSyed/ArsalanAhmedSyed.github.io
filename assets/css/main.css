@@ -125,6 +125,7 @@ input, select, textarea {
 	display: flex;
   justify-content: center; /* Align buttons horizontally at the center */
   flex-wrap: wrap; /* Allow buttons to wrap if the container is smaller */
+	padding-top: 1em;
 }
 .ListContainer{
 	display: flex;
@@ -139,7 +140,7 @@ input, select, textarea {
   width: auto;
   line-height: 100px;
   text-align: center;
-  margin: -50px;
+  margin: -20px;
   display: none; /* Hidden by default */
 }
 
