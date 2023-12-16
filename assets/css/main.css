@@ -73,6 +73,21 @@ input, select, textarea {
 
 /* MY SHIT HERE */
 
+/* Image Hover
+
+/* Add other specific overlay image IDs here */
+
+.imageOverlay
+{
+  position: absolute;
+  top: 0.65em;
+  left: 1.65em;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+
+
 /* The Modal (background) */
 .modal {
 	/* Center the modal */

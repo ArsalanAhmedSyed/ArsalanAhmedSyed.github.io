@@ -292,3 +292,27 @@ window.onclick = function(event) {
     }
   });
 }
+
+// Function to show overlay image on hover
+function showOverlayImage(baseId, overlayId) {
+  const baseImage = document.getElementById(baseId);
+  const overlayImage = document.getElementById(overlayId);
+
+  baseImage.addEventListener('mouseenter', function () {
+    overlayImage.style.opacity = 0.95;
+  });
+
+  baseImage.addEventListener('mouseleave', function () {
+    overlayImage.style.opacity = 0;
+  });
+}
+
+// Call the function for each button's hover effect
+showOverlayImage('MarioBtn', 'MarioOverlayImg');
+showOverlayImage('LightsAndShadowsBtn', 'LightsAndShadowsOverlayImg');
+showOverlayImage('ProjectEveBtn', 'ProjectEveOverlayImg');
+showOverlayImage('TwoSoulsBtn' , 'TwoSoulsOverlayImg');
+showOverlayImage('SeasonScapeBtn', 'SeasonScapeOverlayImg');
+showOverlayImage('SuperFoxBtn', 'SuperFoxOverlayImg');
+showOverlayImage('DirectXBtn', 'DirectXOverlayImg');
+showOverlayImage('MLDBtn', 'MLDOverlayImg');
