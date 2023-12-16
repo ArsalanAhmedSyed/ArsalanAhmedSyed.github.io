@@ -249,46 +249,46 @@ for (var i = 0; i < btns.length; i++) {
 
 //POP UP //
 //////////////////////////////////////////
-function togglePopup(modalId, btnId, closeId){
-	var modal = document.getElementById(modalId);
-	// Get the button that opens the modal
+function togglePopup(PopupId, btnId, closeId){
+	var Popup = document.getElementById(PopupId);
+	// Get the button that opens the Popup
 	var btn = document.getElementById(btnId);
-	// Get the <span> element that closes the modal
+	// Get the <span> element that closes the Popup
 	var span = document.getElementById(closeId);
 
-	// When the user clicks on the button, open the modal
+	// When the user clicks on the button, open the Popup
 	btn.onclick = function() {
-	  modal.style.display = "block";
+	  Popup.style.display = "block";
 	}
 
-	// When the user clicks on <span> (x), close the modal
+	// When the user clicks on <span> (x), close the Popup
 	span.onclick = function() {
-	  modal.style.display = "none";
+	  Popup.style.display = "none";
 	}
 }
 
-// Store all modal IDs in an array
-var modalIds = ["ProjectEve", "Mario", "TwoSouls", "SuperFox", "LightsAndShadows", "DirectX", "SeasonScape", "MLD"];
+// Store all Popup IDs in an array
+var PopupIds = ["ProjectEve", "Mario", "TwoSouls", "SuperFox", "LightsAndShadows", "DirectX", "SeasonScape", "MLD"];
 
-// Call the function for each modal
-modalIds.forEach(function(modalId) {
-  togglePopup(modalId + "Modal", modalId + "Btn", modalId + "Close");
+// Call the function for each Popup
+PopupIds.forEach(function(PopupId) {
+  togglePopup(PopupId + "Popup", PopupId + "Btn", PopupId + "Close");
 });
 
-// Event delegation to handle modal closing
+// Event delegation to handle Popup closing
 window.onclick = function(event) {
-  modalIds.forEach(function(modalId) {
-    var modal = document.getElementById(modalId + "Modal");
-    var btn = document.getElementById(modalId + "Btn");
-    var close = document.getElementById(modalId + "Close");
-    if (event.target === modal) {
-      modal.style.display = "none";
+  PopupIds.forEach(function(PopupId) {
+    var Popup = document.getElementById(PopupId + "Popup");
+    var btn = document.getElementById(PopupId + "Btn");
+    var close = document.getElementById(PopupId + "Close");
+    if (event.target === Popup) {
+      Popup.style.display = "none";
     }
     if (event.target === btn) {
-      modal.style.display = "block";
+      Popup.style.display = "block";
     }
     if (event.target === close) {
-      modal.style.display = "none";
+      Popup.style.display = "none";
     }
   });
 }
