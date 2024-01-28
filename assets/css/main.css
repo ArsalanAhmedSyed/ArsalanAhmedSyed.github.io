@@ -77,8 +77,8 @@ input, select, textarea {
 .imageOverlay
 {
   position: absolute;
-  top: 0.65em;
-  left: 1.65em;
+  top: 0.0em;
+  left: 0.0em;
   opacity: 0;
   transition: opacity 0.3s linear;
 }
@@ -117,22 +117,22 @@ input, select, textarea {
 
 /* Popup Content/Box */
 .Popup-content {
-  background-color: #cf3939;
+  background-color: #682b45;
   margin: 5% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 5px solid #e7e4e4;
+  border: 10px solid #424138;
   width: 50%; /* Could be more or less, depending on screen size */
-	border-radius: 30px;
+	border-radius: 0.0px;
 }
 
 @media screen and (max-width: 480px) {
 
 	.Popup-content {
-		background-color: #cf3939;
+		background-color: .Popup-content.background-color;
     padding: 20px;
-    border: 5px solid #e7e4e4;
+    border: .Popup-content.border;
     width: 100%;
-    border-radius: 30px;
+    border-radius: .Popup-content.border-radius;
 	}
 }
 
@@ -177,9 +177,9 @@ input, select, textarea {
   background-color: #2196f300;
   color: #ffffff;
   width: auto;
-  line-height: 100px;
+  line-height: 1px;
   text-align: center;
-  margin: -20px;
+  margin: 10px;
   display: none; /* Hidden by default */
 }
 
@@ -197,7 +197,7 @@ input, select, textarea {
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-  background-color: #c33a3a;
+  background-color: #424138;
 }
 
 /* Add a dark background to the active button */
@@ -236,8 +236,9 @@ input, select, textarea {
 
 	body {
 
-		background: rgb(180,34,34);
-		background: linear-gradient(90deg, rgba(180,34,34,1) 21%, rgba(33,205,134,1) 100%);
+		background: rgb(83,79,79);
+		background: linear-gradient(90deg, rgba(83,79,79,1) 12%, rgba(80,73,75,1) 24%, rgba(96,68,76,1) 44%, rgba(117,53,75,1) 63%, rgba(133,42,79,1) 79%, rgba(142,20,69,1) 92%);
+
 		/* background: linear-gradient(270deg, #21d26e, #bb3332, #21d26e);
     background-size: 600% 600%;
 
@@ -2810,15 +2811,18 @@ input, select, textarea {
 }
 
 	.image {
-		border-radius: 0.25em;
+		border-radius: 0em;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 0.25em;
+			border-radius: 0.0em;
 			display: block;
+
+			width: 300px;
+  		height: 350px;
 		}
 
 		.image.left, .image.right {
@@ -3494,8 +3498,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background: rgb(180,34,34);
-			background: linear-gradient(90deg, rgba(180,34,34,1) 21%, rgba(33,205,134,1) 100%);
+			/*background: rgb(180,34,34);
+			background: linear-gradient(90deg, rgba(180,34,34,1) 21%, rgba(33,205,134,1) 100%);*/
 		}
 
 
@@ -3781,8 +3785,8 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: rgb(180,34,34);
-		background: linear-gradient(90deg, rgba(180,34,34,1) 0%, rgba(205,33,33,1) 51%, rgba(180,34,34,1) 100%);
+		background: rgb(66,65,56);
+		/*background: linear-gradient(90deg, rgba(180,34,34,1) 0%, rgba(205,33,33,1) 51%, rgba(180,34,34,1) 100%);*/
 		cursor: default;
 		height: 100vh;
 		left: 0;

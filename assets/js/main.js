@@ -299,7 +299,7 @@ function showOverlayImage(baseId, overlayId) {
   const overlayImage = document.getElementById(overlayId);
 
   baseImage.addEventListener('mouseenter', function () {
-    overlayImage.style.opacity = 0.9;
+    overlayImage.style.opacity = 0.95;
   });
 
   baseImage.addEventListener('mouseleave', function () {
