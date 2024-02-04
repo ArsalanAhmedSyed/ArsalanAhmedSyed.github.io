@@ -46,11 +46,12 @@
 				<section id="Welcome" class="wrapper style1 fullscreen fade-up">
 					<div class="inner">
 						<h1>Arsalan Syed</h1>
-						<p style="font-size:auto">I am a gameplay programming student,</br> aspiring to become a senior gameplay programmer in the future.</p>
+						<p style="font-size:auto">I am a technical designer student, and I have self-taught gameplay programming.</br>
+							I aspire to become a game developer with multiple skillsets.</p>
 						<hr>
 
-						<h1> <a class="image" ><img src="images/SkillIcon_img.png" style= "width: 60px; height: 60px;" /></a> SKILLS</h1>
-						<p> [C++] [C#] [UE5] [Unity] [HTML] </br> >> Additional Skill : Technical Designer </p>
+						<h1 style="line-height: 0.9;"> <a class="image" ><img src="images/SkillIcon_img.png" style= "width: 70px; height: 70px;" /></a> SKILLS</h1>
+						<p >⚙ Technical Design</br>⚙ Gameplay Programming </br> [C++] [C#] [UE5] [Unity] [HTML] </p>
 						<hr>
 
 						<h1> <a class="image" style="Top: 20px;"><img src="images/BookIcon_img.png" style= "width: 60px; height: 80px;" /></a> EDUCATION</h1>
@@ -74,10 +75,9 @@
 							<p>Currently in my final year of studying at Staffordshire University, learning technical design, level design, and prototyping games.
 								However, I aspire to become a senior in gameplay programming and explore every part of game development. I have even taught myself C++ in the Unreal Engine,
 								as my goal is to master the features and functionality of the Unreal Engine.</p>
-
-							  <p>I always enjoyed making gameplay features; although being a technical designer allowed me to do that, I decided to explore other roles in the game industry, and gameplay programming caught
+							<p>I always enjoyed making gameplay features; although being a technical designer allowed me to do that, I decided to explore other roles in the game industry, and gameplay programming caught
 								my interest. I enjoyed the difficulty and exploring a deeper level of gameplay programming as I was learning. From there, I decided to pursue my future career as a gameplay programmer and
-								expand my coding knowledge. </p>
+								expand my coding knowledge.</p>
 								<ul class="actions">
 									<li><a href="#Portfolio" class="button scrolly"> Checkout Portfolio ▼</a></li>
 								</ul>
@@ -91,69 +91,70 @@
 				<!-- Portfolio -->
 					<section id="Portfolio" class="wrapper style1  fade-up" >
 						<h1 style = "text-align:center"> PORTFOLIO CATEGORIES</h1>
-						<!-- <section>
-							<div class="inner">
-								<a href="C++.html"  class="CategoriesImage" ><img src="images/All_img.png" alt="" data-position="center center"></a>
-							</div>
-						</section> -->
-
 
 					<section>
-						<!-- Control buttons -->
-						<div id="myBtnContainer">
-							<div class ="ListContainer">
+					<!-- Control buttons -->
+					<div id="myBtnContainer">
+						<div class ="ListContainer">
 							<button class="btn active" onclick="filterSelection('all')" style ="font-family:Poppins"> Show all</button>
 							<button class="btn" onclick="filterSelection('university')" style ="font-family:Poppins"> University</button>
 							<button class="btn" onclick="filterSelection('personal')" style ="font-family:Poppins"> Personal </button>
-							</div>
-							<div class ="ListContainer">
+						</div>
+						<div class ="ListContainer">
 							<button class="btn" onclick="filterSelection('cunity')" style ="font-family:Poppins"> C#/Unity</button>
 							<button class="btn" onclick="filterSelection('c++')" style ="font-family:Poppins"> C++</button>
 							<button class="btn" onclick="filterSelection('un5')" style ="font-family:Poppins"> Unreal Engine</button>
 							<button class="btn" onclick="filterSelection('group')" style ="font-family:Poppins"> Team Project</button>
 							<button class="btn" onclick="filterSelection('other')" style ="font-family:Poppins"> Other </button>
-							</div>
+						</div>
 					</div>
 					</section>
 
 					<section>
 						<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 						<div class="container">
-						<!-- Project Eve -->
+							<!-- TankWarfair -->
+							<div class="filterDiv un5; university">
+									<a class="image" id="TankWarfairBtn">
+										<img src="images/TankWarfair_img.png" alt="" data-position="center center"  />
+										<img src="images/TankWarfairOverlay_img.png" alt="" data-position="center center" id="TankWarfairOverlayImg" class="imageOverlay"/>
+									</a>
+								</div>
+							<!-- Project Eve -->
 							<div class="filterDiv c++; filterDiv un5; personal">
 								<a class="image" id="ProjectEveBtn">
 									<img src="images/ProjectEve_img.png" alt="" data-position="center center"  />
 									<img src="images/ProjectEveOverlay_Img.png" alt="" data-position="center center" id="ProjectEveOverlayImg" class="imageOverlay"/>
 								</a>
 							</div>
-								<!-- DirectX -->
-								<div class="filterDiv c++; university">
+							<!-- DirectX -->
+							<div class="filterDiv c++; university">
 									<a class="image" id="DirectXBtn">
 										<img src="images/DirectX_img.png" alt="" data-position="center center" />
 										<img src="images/DirectXOverlay_img.png" alt="" data-position="center center" id="DirectXOverlayImg" class="imageOverlay"/>
 									</a>
 								</div>
-								<!-- TwoSouls -->
-								<div class="filterDiv cunity; university">
-									<a class="image" id="TwoSoulsBtn">
-										<img src="images/TwoSouls_img.png" alt="" data-position="center center"  />
-										<img src="images/TwoSoulsOverlay_img.png" alt="" data-position="center center" id="TwoSoulsOverlayImg" class="imageOverlay"/>
+							<!-- PopPop -->
+							<div class="filterDiv un5; university">
+									<a class="image" id="PopPopBtn">
+										<img src="images/PopPop_img.png" alt="" data-position="center center"  />
+										<img src="images/PopPopOverlay_img.png" alt="" data-position="center center" id="PopPopOverlayImg" class="imageOverlay"/>
 									</a>
 								</div>
-								<!-- MLD -->
-								<div class="filterDiv other; universit">
+							<!-- MLD -->
+							<div class="filterDiv other; universit">
 									<a class="image" id="MLDBtn">
 										<img src="images/MLD_img.png" alt="" data-position="center center" />
 										<img src="images/MLDOverlay_img.png" alt="" data-position="center center" id="MLDOverlayImg" class="imageOverlay"/>
 									</a>
 								</div>
-								<!-- TankWarfair -->
-								<div class="filterDiv un5; university">
-									<a class="image" id="TankWarfairBtn">
-										<img src="images/TankWarfair_img.png" alt="" data-position="center center"  />
-										<img src="images/TankWarfairOverlay_img.png" alt="" data-position="center center" id="TankWarfairOverlayImg" class="imageOverlay"/>
+							<!-- TwoSouls -->
+							<div class="filterDiv cunity; university">
+									<a class="image" id="TwoSoulsBtn">
+										<img src="images/TwoSouls_img.png" alt="" data-position="center center"  />
+										<img src="images/TwoSoulsOverlay_img.png" alt="" data-position="center center" id="TwoSoulsOverlayImg" class="imageOverlay"/>
 									</a>
-								</div>
+							</div>
 							<!-- Lights And Shadow -->
 							<div class="filterDiv un5 group university">
 							  <a class="image" id="LightsAndShadowsBtn">
@@ -185,8 +186,8 @@
 						</div>
 					</section>
 
+					<!-- PROJECT EVE-->
 					<section>
-						<!-- PROJECT EVE-->
 							<div id="ProjectEvePopup" class="Popup">
 							<!-- Popup content -->
 							<div class="Popup-content">
@@ -220,8 +221,41 @@
 						</div>
 					</section>
 
+					<!-- POPOP-->
 					<section>
-						<!-- TANK WARFAIR-->
+							<div id="PopPopPopup" class="Popup">
+							<!-- Popup content -->
+							<div class="Popup-content">
+								<span class="close" class="button" id="PopPopClose">&times;</span>
+								<div class="content">
+									<div class="inner">
+										<h1>Local Multiplayer</h1>
+										<div class="project-info">
+										<h4 style ="font-family:Poppins"> Project: </h4>
+										<p> 2nd Year, Independent, Unreal Engine<p>
+										</div>
+										<h4 style ="font-family:Poppins">Features: </h4>
+										<ul>
+											<li>Initialise Chain (Managers)</li>
+											<li>Game Mode (CTF, TDM)</li>
+											<li>Console Controller Input</li>
+											<li>Blueprint</li>
+										</ul>
+										<p>This was part of a prototype module where I created a local multiplayer game with two types of game modes (CTF and TDM).
+											The project contains managers and multiple game mode classes for each game mode, with a proper initialization chain setup and blueprint structure.</p>
+											<p>Gameplays wise the game is inspired by Fall Guys, as the design of the character and the map may showcase that. The idea was to create a
+												fun family-friendly game that even kids can play, with the classic game modes that almost every team based game has.</p> <br />
+										<ul class="actions">
+											<li><a href="https://youtu.be/6JbGtI0I0hc" target="_blank" class="button">Gameplay Demo</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- TANK WARFAIR-->
+					<section>
 							<div id="TankWarfairPopup" class="Popup">
 							<!-- Popup content -->
 							<div class="Popup-content">
@@ -255,8 +289,9 @@
 						</div>
 					</section>
 
+					<!-- MLD -->
 					<section>
-						<!-- MLD-->
+
 							<div id="MLDPopup" class="Popup">
 							<!-- Popup content -->
 							<div class="Popup-content">
@@ -288,8 +323,8 @@
 						</div>
 					</section>
 
+					<!-- SEASON SCAPE-->
 					<section>
-						<!-- SeasonScape-->
 							<div id="SeasonScapePopup" class="Popup">
 							<!-- Popup content -->
 							<div class="Popup-content">
@@ -327,8 +362,8 @@
 						</div>
 					</section>
 
+					<!-- DIRECTX-->
 					<section>
-						<!-- DIRECTX-->
 							<div id="DirectXPopup" class="Popup">
 							<!-- Popup content -->
 							<div class="Popup-content">
@@ -366,10 +401,10 @@
 								</div>
 							</div>
 						</div>
-				</section>
+					</section>
 
+				<!-- TWO SOULS -->
 				<section>
-						<!-- TWO SOULS -->
 							<div id="TwoSoulsPopup" class="Popup">
 							<!-- Popup content -->
 							<div class="Popup-content">
@@ -405,10 +440,10 @@
 								</div>
 							</div>
 						</div>
-					</section>
+				</section>
 
+					<!-- MARIO -->
 					<section>
-						<!-- MARIO -->
 							<div id="MarioPopup" class="Popup">
 							<!-- Popup content -->
 							<div class="Popup-content">
@@ -441,8 +476,9 @@
 						</div>
 					</section>
 
+					<!-- SUPER FOX -->
 					<section>
-						<!-- SUPER FOX -->
+
 							<div id="SuperFoxPopup" class="Popup">
 							<!-- Popup content -->
 							<div class="Popup-content">
@@ -476,8 +512,8 @@
 						</div>
 					</section>
 
-					<section>
 					<!-- LIGHT AND SHADOW -->
+				<section>
 						<div id="LightsAndShadowsPopup" class="Popup">
 						<!-- Popup content -->
 						<div class="Popup-content">
@@ -509,6 +545,7 @@
 						</div>
 					</div>
 				</section>
+
 	</section>
 <!---------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------->

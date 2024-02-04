@@ -268,7 +268,7 @@ function togglePopup(PopupId, btnId, closeId){
 }
 
 // Store all Popup IDs in an array
-var PopupIds = ["ProjectEve", "Mario", "TwoSouls", "SuperFox", "LightsAndShadows", "DirectX", "SeasonScape", "MLD", "TankWarfair"];
+var PopupIds = ["ProjectEve", "Mario", "TwoSouls", "SuperFox", "LightsAndShadows", "DirectX", "SeasonScape", "MLD", "TankWarfair", "PopPop"];
 
 // Call the function for each Popup
 PopupIds.forEach(function(PopupId) {
@@ -317,3 +317,4 @@ showOverlayImage('SuperFoxBtn', 'SuperFoxOverlayImg');
 showOverlayImage('DirectXBtn', 'DirectXOverlayImg');
 showOverlayImage('MLDBtn', 'MLDOverlayImg');
 showOverlayImage('TankWarfairBtn', 'TankWarfairOverlayImg');
+showOverlayImage('PopPopBtn', 'PopPopOverlayImg');
